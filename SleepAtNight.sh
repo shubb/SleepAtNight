@@ -1,10 +1,11 @@
 #!/bin/bash
 
-. ./SleepAtNight.config
+. /etc/SleepAtNight.config
 
 echo "Starting SleepAtNight. This workstation will sleep between ${START} and ${END}"
 
 while :
+do
     CURRENT_DATE_TIME=$(date "+%Y-%m-%d %H:%M")
     CURRENT_DATE_TIME="2019-10-14 23:10"
 

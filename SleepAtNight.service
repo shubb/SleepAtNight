@@ -1,0 +1,9 @@
+[Unit]
+Description=Ensure your computer sleeps through the night...
+
+[Service]
+Type=simple
+ExecStart=/bin/bash /usr/bin/SleepAtNight.sh
+
+[Install]
+WantedBy=multi-user.target
